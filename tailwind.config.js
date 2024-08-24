@@ -1,0 +1,103 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        white: "#fff",
+        darkslategray: "#333",
+        gray1: {
+          "100": "#808080",
+          "200": "rgba(255, 255, 255, 0.75)",
+          "300": "rgba(255, 255, 255, 0.5)",
+          "400": "rgba(255, 255, 255, 0.7)",
+        },
+        darkslateblue: "#283671",
+        "neutral-300": "#eff0f7",
+        "neutral-600": "#6f6c90",
+        "neutral-800": "#170f49",
+        gainsboro: "#d9d9d9",
+        black: "#000",
+        gold: "#e5dd18",
+        steelblue: "#0c7bc4",
+        mediumaquamarine: "#41ddb2",
+        mintcream: "#f6fffe",
+        "blackish-green": "#112211",
+        "dark-dark-3": "#4f4f4f",
+        azure: "#eafffc",
+        lightseagreen: "#35b6b4",
+        "gray-800": "#1d2939",
+        "neutral-grey-4": "#979797",
+        "primary-primary": "#485aff",
+        firebrick: "#cf2e2e",
+        dimgray: {
+          "100": "#6b6b6b",
+          "200": "#505050",
+        },
+        mediumseagreen: {
+          "100": "#65bf73",
+          "200": "#46b87a",
+        },
+        "primary-secondary-light": "#fff2eb",
+        "neutral-grey-5": "#656464",
+        "neutral-black": "#171717",
+        "mint-green": "#8dd3bb",
+      },
+      spacing: {},
+      fontFamily: {
+        lato: "Lato",
+        montserrat: "Montserrat",
+        "display-md-semibold": "Inter",
+      },
+      borderRadius: {
+        "37xl": "56px",
+        "17xl": "36px",
+        "3xs": "10px",
+        "81xl": "100px",
+        "6xl": "25px",
+        "101xl": "120px",
+        "8xs": "5px",
+        xl: "20px",
+      },
+    },
+    fontSize: {
+      xl: "20px",
+      base: "16px",
+      "5xl": "24px",
+      lgi: "19px",
+      sm: "14px",
+      mini: "15px",
+      lg: "18px",
+      "15xl": "34px",
+      "8xl": "27px",
+      "3xl": "22px",
+      "17xl": "36px",
+      "10xl": "29px",
+      "21xl": "40px",
+      "13xl": "32px",
+      "9xl": "28px",
+      "29xl": "48px",
+      inherit: "inherit",
+    },
+    screens: {
+      mq1425: {
+        raw: "screen and (max-width: 1425px)",
+      },
+      lg: {
+        max: "1200px",
+      },
+      mq825: {
+        raw: "screen and (max-width: 825px)",
+      },
+      mq450: {
+        raw: "screen and (max-width: 450px)",
+      },
+    },
+  },
+  corePlugins: {
+    preflight: false,
+  },
+};
